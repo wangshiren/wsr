@@ -8,7 +8,7 @@
             margin: 0;
             text-align: center;
             background-color:  rgb(95, 160, 135);
-
+            
         }
 
         .spacebar {
@@ -58,13 +58,13 @@
             background: rgba(25, 124, 91, 0.459);
         }
 
-        nav {
+         nav {
             width: 100%;
-            height: 30px;
-            background: url("logo/whitebar.png");
+            height: 20px;
+            background: url("whitebar.png");
             /*background: blue;*/
             /*background-color:#2198bf;*/
-        }
+         }   
 
         nav>ul {
             margin: 0;
@@ -144,7 +144,7 @@
             width: 100%;
             height: 28px;
             /*background-color: red;*/
-            background: url("logo/ShadowBar.png") no-repeat top right;
+            /* background: url("ShadowBar.png") no-repeat top right; */
         }
 
         .title h3 {
@@ -154,7 +154,7 @@
             font-size: 16px;
             text-align: center;
             line-height: 28px;
-            background: url("logo/ShadowBar.png") no-repeat top left;
+            /* background: url("ShadowBar.png") no-repeat top left; */
         }
 
         article {
@@ -188,14 +188,14 @@
             width: 688px;
            overflow: scroll;
             color: rgb(31, 65, 46);
-            background-color: rgb(95, 160, 135);
+             background-color: rgb(95, 160, 135); 
         }
 
         aside {
             float: right;
             width: 270px;
             height: 574px;
-            background: pink;
+            /* background: pink; */
         }
 
         footer {
@@ -210,7 +210,7 @@
             width: 150px;height: 160px;
             position: absolute;
             top: 250px;
-            left: 5px;
+            left: 15px;
         }
         #nuhan2{width: 150px;height: 160px;
             position: absolute;
@@ -219,8 +219,8 @@
         }
         #nuhan3{width: 150px;height: 160px;
             position: absolute;
-            top: 250px;
-            left: 145px;
+            top: 260px;
+            left: 140px;
         }
         #laoshe1{
             position: absolute;
@@ -253,12 +253,12 @@
       Marquee{
           color: rgb(24, 61, 29);
       }
-     #bianlan{
+      #bianlan{
          width: 270px;height: 574px;
-     }
+     } 
      #yejiao{
          width: 100%;
-         height: 150px;
+         height: 150px; 
      }
      #beijing{
          width: 100%;height: 100%;
@@ -271,7 +271,7 @@
      }
      
         body {
-            height: 2000px;
+            height: 900px;
         }
     #xingming{
         color: rgb(35, 82, 64);
@@ -388,6 +388,72 @@
             text-decoration: none;
             color: #000;
         }
+        
+        #AD  {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+       
+        #box {
+            width: 270px;
+            height: 545px;
+            margin: 28px 1000px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            width: 3000px;
+        }
+
+        #box ul li {
+            overflow: hidden;
+            float: left;
+        }
+
+        #box ol {
+            list-style: none;
+            position: absolute;
+            bottom: 8px;
+            left: 280px;
+        }
+
+        #box ol li {
+            float: right;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            /* text-align: center; */
+            border-radius: 50%;
+            background-color: #ccc; 
+            margin-right: 10px;
+        }
+
+        #left, #right {
+            width: 50px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 30px;
+            line-height: 80px;
+            text-align: center;
+            display: none;
+            position: absolute;
+            top: 110px;
+        }
+
+        #left {
+            left: 0;
+        }
+
+        #right {
+            right: 0;
+        }
     
     </style>
 </head>
@@ -439,10 +505,10 @@
             }
     
             // 关闭登录窗口
-            document.getElementById('closeButton').onclick = function () {
-                login.style.display = '';
-                bg.style.display = '';
-            }
+            // document.getElementById('closeButton').onclick = function () {
+            //     login.style.display = '';
+            //     bg.style.display = '';
+            // }
     
             // 拖曳
             var title = document.getElementById('title');
@@ -531,7 +597,7 @@
             <!--章节-->
             <div class="leftbox">
                 <div class="title">
-                    <Marquee>🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
+                    <Marquee id="meishi1">🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
                 </div>
 
                 <article class="article_left">
@@ -557,7 +623,7 @@
 
             <div class="rightbox">
                 <div class="title">
-                    <Marquee>🌟详细介绍🌟</Marquee>
+                    <Marquee id="meishi1">🌟详细介绍🌟</Marquee>
                 </div>
 
                 <article class="article_right">
@@ -571,7 +637,7 @@
 
             <div class="leftbox">
                 <div class="title">
-                    <Marquee>🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
+                    <Marquee id="meishi2">🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
                 </div>
 
                 <article class="article_left">
@@ -587,7 +653,7 @@
                         <li><a href="#">澜澜</a></li>
                         <li><a href="#">美美</a></li>
                         <li><a href="#">晴晴</a></li> -->
-                        <a href="https://s.taobao.com/search?q=%E9%85%B1%E6%9D%BF%E9%B8%AD&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20201123&ie=utf8&cps=yes&ppath=20000%3A47125335">酱板鸭</a>
+                        <a href="https://s.taobao.com/search?q=%E9%85%B1%E6%9D%BF%E9%B8%AD&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20201123&ie=utf8&cps=yes&ppath=20000%3A47125335">酱板鸭链接</a>
                         <img id="laoshe1" class="laoshe" src="jiangbanya.jpg" alt="">
                         <img id="laoshe2" class="laoshe" src="jiangbanya1.jpg" alt="">
                         <img id="laoshe3" class="laoshe" src="jiangbanya2.jpg" alt="">
@@ -601,7 +667,7 @@
 
             <div class="rightbox">
                 <div class="title">
-                    <Marquee>🌟详细介绍🌟</Marquee>
+                    <Marquee id="meishi2">🌟详细介绍🌟</Marquee>
                 </div>
 
                 <article class="article_right">
@@ -638,12 +704,179 @@
             
         </section>
 
-        <aside>
-            
-                <img id="bianlan" src="yejiao7.jpg" alt="">
+        <div id="box" class="all">
+            <div class="screen">
+                <ul style="left: 0px;">
+                    <!-- <li><img src="yejiao.png" width="270px" height="574px" alt=""></li> -->
+                    <!-- <li><img src="yejiao3.png" width="270px" height="574px" alt=""></li> -->
+                    <li><img src="yejiao5.jpg" width="270px" height="574px" alt=""></li>
+                    <li><img src="yejiao6.jpg" width="270px" height="574px" alt=""></li>
+                    <li><img src="yejiao7.jpg" width="270px" height="574px" alt=""></li>
+                    <!-- <li><img src="rotationMap/bg1.jpg" width="480px" height="300px" alt=""></li> -->
+                </ul>
+                 <ol>
+                    <!-- <li style>1</li>
+                    <li style>2</li>
+                    <li style>3</li>
+                    <li style>4</li>
+                    <li style>5</li> -->
+                </ol> 
+            </div>
+            <div>
+                <span id="left" style="display: none;"><</span>
+                <span id="right" style="display: none;">></span>
+            </div>
+        </div>
+    
+        <script>
+            // 定时器间隔时间
+            var interval = 3000;
+    
+            var box = document.getElementById('box');
+            var screen = box.children[0];
+            var ul = screen.children[0];
+            var ol = screen.children[1];
+    
+            var arrLeft = document.getElementById('left');
+            var arrRight = document.getElementById('right');
+    
+            // 获取图片的宽度
+            var imgWidth = box.offsetWidth;
+    
+            function setInnerText(element, content) {
+                if (typeof element.innerText === 'string')
+                    element.innerText = content;
+                else
+                    element.textContent = content;
+            }
+    
+            function animate(element, target, callback) {
+                // 判断之前是否开启了定时器
+                if (element.timerId)
+                    clearInterval(element.timerId);
+    
+                // 让每个执行动画的元素记录自己的定时器
+                element.timerId = setInterval(function () {
+                    // 当前坐标
+                    var current = element.offsetLeft;
+                    var step = 10;
+    
+                    // 当当前位置 > 目标位置时，step 应该是负数
+                    if (current > target)
+                        step = - Math.abs(step);
+    
+                    // 如果当前位置距离目标位置小于 step ，就直接达到目标位置
+                    if (Math.abs(current - target) <= Math.abs(step)) {
+                        element.style.left = target + 'px';
+                        clearInterval(element.timerId);
+                        if (callback)
+                            callback();
+                        return;
+                    }
+                    current += step;
+                    element.style.left = current + 'px';
+                }, 20);
+            }
+    
+            // 动态生成序号
+            var count = ul.children.length;
+            for (var i = 0; i < count; ++i) {
+                var li = document.createElement('li');
+                setInnerText(li, i + 1);
+                ol.appendChild(li);
+    
+                // li 记录它自己的索引
+                li.index = i;
+    
+                // 点击序号切换图片
+                li.onclick = liClick;
+            }
+    
+            // 默认第一个序号高亮显示
+            ol.children[0].style.backgroundColor = 'dodgerblue';
+    
+            // 鼠标进入时显示箭头
+            box.onmouseenter = function () {
+                arrLeft.style.display = 'block';
+                arrRight.style.display = 'block';
+                // 停止定时器
+                clearInterval(timerId);
+            }
+            box.onmouseleave = function () {
+                arrLeft.style.display = "none";
+                arrRight.style.display = "none";
+                // 开启定时器
+                timerId = setInterval(function () {
+                    arrRight.click();
+                }, interval);
+            }
+    
+            // 点击序号动画切换图片
+            function liClick() {
+                animate(ul, -this.index * imgWidth);
+    
+                // 让当前li序号高亮显示，其它序号取消高亮显示
+                for (i = 0; i < count; ++i)
+                    ol.children[i].style.backgroundColor = '';
+                this.style.backgroundColor = 'dodgerblue';
+    
+                // 点击序号时，记录下其index
+                index = this.index;
+            }
+    
+            // 克隆第一个 li ，并添加到 ul 的最后
+            var cloneLi = ul.children[0].cloneNode(true);
+            ul.appendChild(cloneLi);
+    
+            // 点击箭头显示 上一张 / 下一张
+            // 默认时，第一张图片的索引
+            var index = 0;
+            arrRight.onclick = function () {
+                if (index === count) {
+                    index = 0;
+                    ul.style.left = '0px';
+                }
+    
+                ++index;
+                if (index < count) {
+                    // 让对应序号的 li 被点击
+                    ol.children[index].click();
+                } else {
+                    // 以动画形式切换到克隆出来的第一张
+                    animate(ul, -index * imgWidth);
+                    // 取消所有序号的高亮
+                    for (i = 0; i < count; ++i)
+                        ol.children[i].style.backgroundColor = '';
+                    ol.children[0].style.backgroundColor = 'dodgerblue';
+                }
+            }
+    
+            arrLeft.onclick = function () {
+                // 如果 index 为第一张，直接跳转到克隆出的最后一张
+                if (index === 0) {
+                    index = count;
+                    ul.style.left = -index * imgWidth + 'px';
+                }
+                --index;
+                // if (index >= 0) {
+                    ol.children[index].click();
+                // }
+            }
+    
+            // 自动切换图片
+            var timerId = setInterval(function () {
+                arrRight.click();
+            }, interval);
+        </script>
+    
+           
+            <!-- <aside>
+                <img id="bianlan" src="yejiao7.jpg" alt=""> 
+            </aside>  -->
+                
                
             <!-- <img id="bianlan" src="yejiao7.jpg" alt=""> -->
-        </aside>
+        
 
     <!--</div>-->
 
@@ -672,5 +905,57 @@
         }
     </script> -->
 
+    
 
+        <img src="sahua.gif" id="AD" alt="广告" style="top: 330px; left: 748px;">
+        
+        <script>
+            var ad = document.getElementById("AD");
+        
+        //    ad.onload = function () {
+        //
+        //    };
+        
+            //    可视区的高度
+            var screenHeight = document.documentElement.clientHeight;
+            var diffHeight = screenHeight - ad.clientHeight;
+        
+            //    可视区的宽度
+            var screenWidth = document.documentElement.clientWidth;
+            var diffWidth = screenWidth - ad.clientWidth;
+        
+            ys = Math.round(Math.random() * diffHeight);
+            ad.style.top = ys + "px";
+            yv = 5;
+        
+            xs = Math.round(Math.random() * diffWidth);
+            ad.style.left = xs + "px";
+            xv = 5;
+        
+            setInterval( function () {
+                // y轴
+                ys += yv;
+                if (ys >= diffHeight) {
+                    ys = diffHeight;
+                    yv = -yv;
+                }
+                if (ys <= 0) {
+                    ys = 0;
+                    yv = -yv;
+                }
+                ad.style.top = ys + "px";
+        
+                // x轴
+                xs += xv;
+                if (xs >= diffWidth) {
+                    xs = diffWidth;
+                    xv = -xv;
+                }
+                if (xs <= 0) {
+                    xs = 0;
+                    xv = -xv;
+                }
+                ad.style.left = xs + "px";
+            }, 200);
+        </script>
 </body></html>
